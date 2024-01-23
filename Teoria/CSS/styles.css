@@ -1,6 +1,7 @@
 .container {
     background-color: #ccc;
     height: 500px;
+    width: 400px;
     display: flex;
 
     flex-direction: row; 
@@ -10,8 +11,34 @@
     justify-content: flex-start;
     align-items: flex-start;
     /*align content quando existe quebra de linha*/
+    align-content: flex-start;
+
 }
 
 .item {
     background-color: #ddd;
+    padding: 20px;
+    margin: 5px;
+    height: 30px;
+    flex-grow: 1; /*0 é o valor padrão*/
+    flex-shrink: 1;
+    flex-basis: 80px; /*tamanho inicial dos itens*/
+
+    flex: 1 1 80px;
+}
+
+.article-01{
+    order: 3; 
+}
+.article-02{
+    order: 1;
+    align-self: flex-start; /*centro do container flexbox*/
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.article-03{
+    order: 4;
+}
+.article-04{
+    order: 1;
 }
