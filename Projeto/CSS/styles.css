@@ -6,7 +6,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-ul {
+nav, ul {
     list-style: none;
 }
 
@@ -21,11 +21,44 @@ a:hover {
 
 /* Header */
 header {
-    background-color: red;
+    background-color: lightcoral;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header img {
+    width: 100px;
+    padding: 10px;
+    padding-bottom: 7px;
+}
+
+header nav {
+    display: flex;
+}
+
+header li a {
+    color: green;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 700px) {
+    header {flex-direction: column;}
+    header img {margin-bottom: 15px;}
 }
