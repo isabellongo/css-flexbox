@@ -87,3 +87,6 @@ header li:last-child {
 }
 
 /*section 2*/
+.conheca-o-hotel {
+    display: flex;
+}
